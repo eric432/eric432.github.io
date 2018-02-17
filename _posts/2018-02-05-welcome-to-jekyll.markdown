@@ -4,7 +4,7 @@ title:  "My Jekyll site hosted at Github!"
 date:   2018-02-05 17:37:50 -0700
 categories: jekyll update
 ---
-Hey that's pretty neat right, free hosting at Github for your personal site. I'll be tweaking this more as time allows...now I'm just hapy I got it up and running.
+Hey that's pretty neat right, free hosting at Github for your personal site. I'll be tweaking this more as time allows...now I'm just happy I got it up and running.
 
 {% highlight ruby %}
 def print_hi(name)
