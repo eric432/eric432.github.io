@@ -26,6 +26,7 @@ github_username:  eric432
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-twitter-plugin
 exclude:
   - Gemfile
   - Gemfile.lock
