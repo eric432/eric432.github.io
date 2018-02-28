@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 About Me? Who would want to know? Just asking. Really.
+Here is a link to my Portland music blog [ETHERBOMB](http://www.etherbomb.com/ "Portland Music Blog")
 
 <!-- IMAGE BEGINS HERE -->
 <font size="1">
