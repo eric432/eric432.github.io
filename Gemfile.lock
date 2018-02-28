@@ -188,6 +188,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (1.5.1)
       listen (~> 3.0)
+    jekyll_version_plugin (2.0.0)
     jemoji (0.8.1)
       activesupport (~> 4.0, >= 4.2.9)
       gemoji (~> 3.0)
@@ -244,6 +245,7 @@ DEPENDENCIES
   github-pages
   hawkins
   jekyll-feed (~> 0.6)
+  jekyll_version_plugin
 
 RUBY VERSION
    ruby 2.4.2p198
