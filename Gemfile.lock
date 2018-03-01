@@ -245,7 +245,6 @@ DEPENDENCIES
   github-pages
   hawkins
   jekyll-feed (~> 0.6)
-  jekyll_version_plugin
 
 RUBY VERSION
    ruby 2.4.2p198
