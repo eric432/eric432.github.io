@@ -16,7 +16,7 @@
 title: Eric Baldoni
 email: this-is-not-my-real-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  I should really write a site description here right?
+  My resume served up Jekyll style.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ericbaldoni

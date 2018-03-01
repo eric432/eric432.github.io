@@ -8,7 +8,6 @@
 
         {% if page_paths %}
           <nav class="site-nav">
-            <span>Build: v1.0-{% project_version %}</span>
             <div class="trigger">
               {% for path in page_paths %}
                 {% assign my_page = site.pages | where: "path", path | first %}
