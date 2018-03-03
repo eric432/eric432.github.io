@@ -6,7 +6,7 @@ layout: default
   <div class="layout layout--right">
     <article class="layout__main">
       <h1>{{site.name}}</h1>
-      <p class="txt-intro">Welcome to my fantastic resume, prepare to be wowed. It's likely I sent you this link, because I want you to hire me!</p>
+      <p class="txt-intro">Welcome to my fantastic resume, prepare to be wowed. It's likely I sent you this link, because I want you to <a href="mailto:{{ site.email | encode_email }}" title="Contact me">Hire Me!</a></p>
       <h2>Introduction</h2>
       <p>I am a front end developer who landed in this vocation via a design path. I have been designing and building websites
         and applications since...well since we used
@@ -17,28 +17,7 @@ layout: default
     <aside class="layout__side card">
       <img src="/assets/images/eric-baldoni.jpg" alt="Eric Baldoni">
       <ul class="contact-list">
-        <li>Contact:
-          <script type="text/javascript">
-            //<![CDATA[
-            <!--
-            var x = "function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-              "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\"" +
-              "\\\\,l=x.length;for(i=0;i<l;i++){if(i==92)y+=i;y%=127;o+=String.fromCharCod" +
-              "e(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\82=*\\\\\\\\r\\\\\\\\004\\\\\\" +
-              "\\014\\\\\\\\027J\\\\\\\\022\\\\\\\\024\\\\\\\\016\\\\\\\\034\\\\\\\\014\\\\" +
-              "\\\\006\\\\\\\\005DOR\\\\\\\\016P\\\\\\\\031\\\\\\\\000\\\\\\\\026\\\\\\\\0" +
-              "22H*U\\\\\\\\025\\\\\\\\030\\\\\\\\023\\\\\\\\027\\\\\\\\010\\\\\\\\022Dbhv" +
-              "`hjhbHngjea l\\\\\\\\177|-`aw|r{m'Xssj~CUKMC\\\\\\\\005cUAJ\\\\\\\\niMAJ@^X" +
-              "\\\\\\\\023o\\\\\\\\026\\\\\\\\025B^Lzr%E8^q|ws\\\\\\\\000lG\\\\\\\\002x\\\\" +
-              "\\\\007\\\\\\\\030bEHCG\\\\\\\\014`K\\\\\\\\016\\\\\\\\014\\\\\\\\036S\\\\\\" +
-              "\\r\\\\\\\\026\\\\\\\\034\\\\\\\\r\\\\\\\\007\\\\\\\\003\\\"\\\\,92)\\\"(f}" +
-              ";)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l" +
-              ";x=+x{yrt{)29=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)" +
-              "x(f noitcnuf\")";
-            while (x = eval(x));
-            //-->
-            //]]>
-          </script>
+        <li>Contact: <a href="mailto:{{ site.email | encode_email }}" title="Contact me">Contact me</a>
         </li>
         <li>Location: Currently residing in Vancouver WA (15 min north of Portland)</li>
       </ul>

@@ -8,15 +8,17 @@
     - title: Javascript/JQuery
       percent: 65% 
     - title: Wordpress/WooCommerce/ACF/Timber
-      percent: 90% 
+      percent: 90%
+    - title: Jekyll/Liquid
+      percent: 80%
     - title: GIT/Github/Bitbucket
       percent: 65%
 - section:
   title: Design
   skills:
-    - title: Photoshop
+    - title: Adobe Photoshop
       percent: 100% 
-    - title: Illustrator
+    - title: Adobe Illustrator
       percent: 65% 
     - title: Sketch
       percent: 35% 
