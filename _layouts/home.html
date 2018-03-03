@@ -53,26 +53,15 @@ layout: default
   <h2>Where I use(d) these fine tuned skills</h2>
   <p>For the last 15 years or so I have been either freelancing or working with remote teams on more complex projects. Prior
     to this I worked for 5 years at a software/web marketing firm as a designer and then was promoted to Art Director.</p>
-  <dl>
-    <dt>Bitclone LLC:
-      <i>2005-Current</i>
-    </dt>
-    <dd>A small agency founded by myself, focusing on Wordpress design and development.</dd>
-    <dd>Post: Founder, Lead Designer/Developer</dd>
-    <dd>Website:
-      <a href="https://www.bitclone.co">https://www.bitclone.co</a>
-    </dd>
-  </dl>
-  <dl>
-    <dt>Flowerpress:
-      <i>2009-Current</i>
-    </dt>
-    <dd>A Seattle based agency</dd>
-    <dd>Post: Sr. User Interface Engineer</dd>
-    <dd>Website:
-      <a href="https://www.theflowerpress.net/studio">https://www.theflowerpress.net</a>
-    </dd>
-  </dl>
+  
+  {% for section in site.data.jobs %}
+    <dl>
+        <dt>{{section.company}} <i>{{section.date}}</i></dt>
+        <dd>{{section.description}}</dd>
+        <dd>Post: {{section.title}}</dd>
+        <dd>Website: <a href="{{section.website}}" title="{{section.company}}">{{section.website}}</a></dd>
+    </dl>
+  {% endfor %}
 
   {% comment %}
   <h1 class="page-heading">Stuff I Might Have Said!</h1>

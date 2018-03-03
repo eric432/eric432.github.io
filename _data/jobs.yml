@@ -1,0 +1,12 @@
+- job:
+  company: Bitclone LLC
+  dates: 2005-Current 
+  description: A small agency founded by myself, focusing on Wordpress design and development.
+  title: Founder, Lead Designer/Developer
+  website: https://www.bitclone.co
+- job:
+  company: Flowerpress Studio
+  dates: 2010-Current
+  description: A remote team agency based in Seattle.
+  title: Sr. User Interface Engineer
+  website: https://www.theflowerpress.net
