@@ -1,52 +1,24 @@
-<footer id="footer" class="container">
-  <div class="row">
-    <div class="col-lg-12">
-
-        
-        {% if site.description %}
-        <p>
-          {{ site.description | escape }}
-        </p>
-        {% endif %}
-        <ul class="contact-list">
-            {% if site.email %}
-            <li>Contact: 
-                <script type="text/javascript">
-                  //<![CDATA[
-                  <!--
-                  var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-                  "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
-                  "\\\\,l=x.length;for(i=0;i<l;i++){if(i==92)y+=i;y%=127;o+=String.fromCharCod" +
-                  "e(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\82=*\\\\\\\\r\\\\\\\\004\\\\\\"+
-                  "\\014\\\\\\\\027J\\\\\\\\022\\\\\\\\024\\\\\\\\016\\\\\\\\034\\\\\\\\014\\\\"+
-                  "\\\\006\\\\\\\\005DOR\\\\\\\\016P\\\\\\\\031\\\\\\\\000\\\\\\\\026\\\\\\\\0" +
-                  "22H*U\\\\\\\\025\\\\\\\\030\\\\\\\\023\\\\\\\\027\\\\\\\\010\\\\\\\\022Dbhv" +
-                  "`hjhbHngjea l\\\\\\\\177|-`aw|r{m'Xssj~CUKMC\\\\\\\\005cUAJ\\\\\\\\niMAJ@^X" +
-                  "\\\\\\\\023o\\\\\\\\026\\\\\\\\025B^Lzr%E8^q|ws\\\\\\\\000lG\\\\\\\\002x\\\\"+
-                  "\\\\007\\\\\\\\030bEHCG\\\\\\\\014`K\\\\\\\\016\\\\\\\\014\\\\\\\\036S\\\\\\"+
-                  "\\r\\\\\\\\026\\\\\\\\034\\\\\\\\r\\\\\\\\007\\\\\\\\003\\\"\\\\,92)\\\"(f}" +
-                  ";)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l" +
-                  ";x=+x{yrt{)29=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)" +
-                  "x(f noitcnuf\")"                                                             ;
-                  while(x=eval(x));
-                  //-->
-                  //]]>
-                  </script>           
-            </li>
-            {% endif %}
-            <li>Host: <span>Github Pages</span></li>
-            <li>Theme: <a href="https://github.com/jekyll/minima" title="Minima theme">Minima</a> (customized)</li>
-            <li>Build: <span>v1.0</span></li>
-        </ul>
-        
-
-    </div>
+<footer class="doc-footer">
+  <div>
+    <ul>
+      <li>&copy; {{ site.time | date: '%Y' }}
+        <a href="/" class="black">Eric Baldoni</a>
+      </li>
+      <li>Resume hosted by:
+        <span>Github Pages</span>
+      </li>
+      <li>Theme:
+        <a href="https://github.com/jekyll/minima" title="Minima theme">Minima</a> (customized)</li>
+      <li>Build:
+        <span>v1.0</span>
+      </li>
+    </ul>
   </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-  $('.horizontal .progress-fill span').each(function(){
-  var percent = $(this).html();
-  $(this).parent().css('width', percent);
-});
+  $('.progress-bar .progress-bar__fill span').each(function () {
+    var percent = $(this).html();
+    $(this).parent().css('width', percent);
+  });
 </script>

@@ -1,0 +1,18 @@
+- section:
+  title: Front End Development
+  skills:
+    - title: HTML5
+      percent: 100% 
+    - title: SASS/CSS
+      percent: 100% 
+    - title: Javascript/JQuery
+      percent: 65% 
+    - title: Wordpress/WooCommerce/ACF/Timber
+      percent: 90% 
+    - title: GIT/Github/Bitbucket
+      percent: 65%
+- section:
+  title: Design
+  skills:
+    - title: Photoshop
+      percent: 100% 

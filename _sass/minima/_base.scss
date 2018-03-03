@@ -19,70 +19,6 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Inconsolata:400,700" !d
 
 // Tables ======================================================================
 
-.table {
-  &-success,
-  &-info,
-  &-warning,
-  &-danger {
-    color: #fff;
-  }
-}
-
-.table {
-
-  &-success {
-    &, > th, > td {
-      background-color: $success;
-    }
-  }
-
-  &-info {
-    &, > th, > td {
-      background-color: $info;
-    }
-  }
-
-  &-danger {
-    &, > th, > td {
-      background-color: $danger;
-    }
-  }
-
-  &-warning {
-    &, > th, > td {
-      background-color: $warning;
-    }
-  }
-
-  &-hover {
-
-    .table-success:hover {
-      &, > th, > td {
-        background-color: darken($success, 5%);
-      }
-    }
-
-    .table-info:hover {
-      &, > th, > td {
-        background-color: darken($info, 5%);
-      }
-    }
-
-    .table-danger:hover {
-      &, > th, > td {
-        background-color: darken($danger, 5%);
-      }
-    }
-
-    .table-warning:hover {
-      &, > th, > td {
-        background-color: darken($warning, 5%);
-      }
-    }
-
-  }
-}
-
 // Forms =======================================================================
 
 // .input-group-addon {
@@ -116,40 +52,96 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Inconsolata:400,700" !d
 
 // Progress bars ===============================================================
 
-// Containers ==================================================================
+// Resume ======================================================================
+p, dt {
+  font-size: 1.2em;
+}
+img {
+  width: 100%;
+  max-width: auto;
+}
+main,
+.doc-footer,
+.doc-header {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  > div,
+  > article {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+  }
+}
+.doc-header {
+  background: $gray-800;
+  margin-bottom: 30px;
+  > div {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.layout {
+  border-bottom: 2px dashed $gray-800;
+  margin: 0 -15px;
+  display: flex;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  &__main {
+    margin: 0 15px;
+    width: 60%;
+  }
+  &__side {
+    margin: 0 15px;
+    width: 40%;
+  }
+}
+.card {
+  border: 2px dashed $gray-800;
+  padding: 15px;
+  img {
+    margin-bottom: 15px;
+  }
+}
+.doc-footer {
+  ul {
+    border-top: 2px dashed $gray-800;
+    list-style: none;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+    li {
+      margin: 0 15px;
+    }
+  }
+}
+
 .contact-list {
   span {
       color: $info;
   }
 }
-.horizontal .progress-bar {
-  float: left;
-  height: 45px;
+.progress-bar {
   width: 100%;
-  padding: 12px 0;
-}
-
-.horizontal .progress-track {
-  position: relative;
-  width: 100%;
-  height: 20px;
-  background: $gray-800;
-}
-
-.horizontal .progress-fill {
-  position: relative;
-  background: $info;
-  height: 20px;
-  width: 50%;
-  color: #fff;
-  text-align: center;
-  font-family: "Lato","Verdana",sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.rounded .progress-track,
-.rounded .progress-fill {
-  border-radius: 3px;
-  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+  max-width: 300px;
+  &__track {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: $gray-800;  
+  }
+  &__fill {
+    position: relative;
+    background: $info;
+    height: 20px;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: "Lato","Verdana",sans-serif;
+    font-size: 12px;
+    line-height: 20px;   
+  }
 }

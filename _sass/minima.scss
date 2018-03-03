@@ -4787,20 +4787,16 @@ tbody.collapse.show {
 
 .page-link {
   position: relative;
-  display: block;
-  padding: 0.5rem 0.75rem;
-  margin-left: -1px;
+  display: inline-block;
   line-height: 1.25;
   color: #2AA198;
   background-color: transparent;
-  border: 1px solid #073642;
 }
 
 .page-link:hover {
   color: #2AA198;
   text-decoration: none;
   background-color: #073642;
-  border-color: #073642;
 }
 
 .page-link:focus {
