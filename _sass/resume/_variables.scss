@@ -1,0 +1,35 @@
+// Resume 1.0.0
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Inconsolata:400,700" !default;
+@import url($web-font-path);
+
+// Colors
+$white:    #fff !default;
+$gray-100: #FDF6E3 !default;
+$gray-200: #EEE8D5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #839496 !default;
+$gray-700: #495057 !default;
+$gray-800: #073642 !default;
+$gray-900: #002B36 !default;
+$black:    #000 !default;
+
+$teal-light:#2AA198;
+$teal:    #073642 !default;
+$teal-dark: #002B36;
+$cyan:    #268BD2 !default;
+$gold: #B58900;
+
+$primary:       $teal !default;
+$secondary:     $cyan !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+// Base
+$base-font-family: 'Inconsolata', monospace;
+$base-font-color: $gray-600;
+$base-bgr: $teal-dark;
+$base-link-color: $gold;
+$base-margin: 15px;

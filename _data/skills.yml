@@ -1,6 +1,7 @@
-- section:
+# Skills
+- skills:
   title: Front End Development
-  skills:
+  skill:
     - title: HTML5
       percent: 100% 
     - title: SASS/CSS
@@ -13,12 +14,12 @@
       percent: 80%
     - title: GIT/Github/Bitbucket
       percent: 65%
-- section:
+- skills:
   title: Design
-  skills:
+  skill:
     - title: Adobe Photoshop
       percent: 100% 
     - title: Adobe Illustrator
       percent: 65% 
     - title: Sketch
-      percent: 35% 
+      percent: 35%

@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*!
+ * Resume v1.0.0
+ * Homepage: https://bitclone.co
+ * Copyright 2018 Bitclone LLC
+*/
+
+// Import partials.
+@import
+//"resume/normalize",
+"resume/variables",
+"resume/mixins",
+"resume/base"
+;

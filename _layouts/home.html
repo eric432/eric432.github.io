@@ -6,13 +6,20 @@ layout: default
   <div class="layout layout--right">
     <article class="layout__main">
       <h1>{{site.name}}</h1>
-      <p class="txt-intro">Welcome to my fantastic resume, prepare to be wowed. It's likely I sent you this link, because I want you to <a href="mailto:{{ site.email | encode_email }}" title="Contact me">Hire Me!</a></p>
+      <p class="txt-intro">Welcome to my fantastic resume, prepare to be wowed. It's likely I sent you this link, because I'd like to work with you.</p>
+      <p><a class="button" href="mailto:{{ site.email | encode_email }}" title="Contact me">Hire Me!</a></p>
       <h2>Introduction</h2>
       <p>I am a front end developer who landed in this vocation via a design path. I have been designing and building websites
         and applications since...well since we used
         <code>&lt;table&gt;</code> to hack together page structure. It's been an interesting journey so far.</p>
-      <p>In addition to my design/development skills I am an accomplished photographer and video editor. I held the position
-        of Art Director for a small software company, which involved managing a team of designers and video editors.</p>
+      <h3>5 quick facts about me</h3>
+      <ol class="five-facts">
+        <li><span>I offer depth of experience and talent.</span></li>
+        <li><span>I uderstand real world expectation vs budget constaint.</span></li>
+        <li><span>I am good a troubleshooting, and helping find solutions.</span></li>
+        <li><span>I work with focused designers who have trained me to mind details when migrating their vision to code.</span></li>
+        <li><span>I am constantly learning, updating, and reinventing my processes.</span></li>
+      </ol>
     </article>
     <aside class="layout__side card">
       <img src="/assets/images/eric-baldoni.jpg" alt="Eric Baldoni">
@@ -25,17 +32,20 @@ layout: default
   </div>
   <div class="layout layout--right">
       <article class="layout__main">
-          <h2>Skills I bring to the table!</h2>
+          <h2>Skills I bring to the table</h2>
           <p>Web development is a never ending learning process. I am a perpetual learner who's fine tuned my hunter gather skills
             in my quest to make things work as efficiently as possible...or on occasion, just get it working depending on the
             deadline and budget. The percentage bar displays my self evaluated progress of these various skills.</p>
+            <h3>Projects</h3>
+            <p>To view the most current examples of work I've built or participated in building please visit either of the agencies in the section below.</p>
+          
       </article>
       <aside class="layout__side">
    
-              {% for section in site.data.skills %}
+              {% for skills in site.data.skills %}
               <dl>
-                  <dt>{{section.title}}</dt>
-                  {% for skill in section.skills %}
+                  <dt>{{skills.title}}</dt>
+                  {% for skill in skills.skill %}
                   <dd>{{skill.title}}
                     <div class="progress-bar">
                       <div class="progress-bar__track">
@@ -50,16 +60,16 @@ layout: default
               {% endfor %}
       </aside>
   </div>
-  <h2>Where I use(d) these fine tuned skills</h2>
+  <h2>Where I use(d) these finely tuned skills</h2>
   <p>For the last 15 years or so I have been either freelancing or working with remote teams on more complex projects. Prior
     to this I worked for 5 years at a software/web marketing firm as a designer and then was promoted to Art Director.</p>
   
-  {% for section in site.data.jobs %}
-    <dl>
-        <dt>{{section.company}} <i>{{section.date}}</i></dt>
-        <dd>{{section.description}}</dd>
-        <dd>Post: {{section.title}}</dd>
-        <dd>Website: <a href="{{section.website}}" title="{{section.company}}">{{section.website}}</a></dd>
+  {% for job in site.data.jobs %}
+    <dl class="job-list">
+        <dt>{{job.company}} <i>{{job.date}}</i></dt>
+        <dd>{{job.description}}</dd>
+        <dd><span>Post:</span> {{job.title}}</dd>
+        <dd><span>Website:</span> <a href="{{job.website}}" title="{{job.company}}">{{job.website}}</a></dd>
     </dl>
   {% endfor %}
 

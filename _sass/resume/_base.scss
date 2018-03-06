@@ -1,0 +1,227 @@
+// Resume 4.0.0
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+  font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  box-sizing: border-box; /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+}
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+body {
+background: $base-bgr;
+}
+body,
+button,
+input,
+select,
+textarea {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+p {
+  @include font-size(20);
+  margin: $base-margin 0;
+}
+ul {
+  padding-left: 20px;
+}
+dt {
+  @include font-size(20);
+  text-transform: uppercase;
+}
+dd {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+img {
+  width: 100%;
+  max-width: auto;
+}
+a {
+  color: $base-link-color;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  font-weight:400;
+}
+
+h1 {
+  @include font-size(36); 
+}
+
+h2 {
+  @include font-size(32); 
+}
+
+h3 {
+  @include font-size(20);
+  text-transform: uppercase; 
+}
+
+h4 {
+  @include font-size(24); 
+}
+code {
+  color: $cyan;
+}
+// Resume ======================================================================
+.button {
+  @include font-size(20); 
+  background-color:$base-link-color;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+}
+main,
+.doc-footer,
+.doc-header {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  > div,
+  > article {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+  }
+}
+.doc-header {
+  background: $teal;
+  margin-bottom: 30px;
+  > div {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.layout {
+  border-bottom: 2px dashed $teal;
+  margin: 0 -15px;
+  display: flex;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  &__main {
+    margin: 0 15px;
+    width: 60%;
+  }
+  &__side {
+    margin: 0 15px;
+    width: 40%;
+  }
+}
+.card {
+  border: 2px dashed $teal;
+  padding: 15px;
+  img {
+    margin-bottom: 15px;
+  }
+}
+.five-facts {
+  margin-left: $base-margin * 3;
+  margin-top: $base-margin;
+  color: $cyan;
+  li {
+    @include font-size(16); 
+  }
+  span {
+    color:#2AA198;
+  }
+}
+.job-list {
+  span {
+    color: $cyan;
+  }
+}
+.doc-footer {
+  ul {
+    border-top: 2px dashed $teal;
+    list-style: none;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+    li {
+      margin: 0 15px;
+    }
+  }
+}
+.asci-img {
+  overflow: hidden;
+  height: 411px;
+  max-width: 411px;
+  width: 100%;
+  pre {
+    margin: 0;
+    font-size: 10.5px;
+    line-height: 1.2;
+  }
+}
+.contact-list {
+  span {
+      color: $cyan;
+  }
+}
+.progress-bar {
+  width: 100%;
+  max-width: 300px;
+  &__track {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: $teal;  
+  }
+  &__fill {
+    position: relative;
+    background: $cyan;
+    height: 20px;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: "Lato","Verdana",sans-serif;
+    font-size: 12px;
+    line-height: 20px;   
+  }
+}
