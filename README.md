@@ -1,2 +1,3 @@
-# eric432.github.io
-Let's create a website repo! I've added a Jekyll site, testing out how to connect to Github hosting.
+# Jekyll resume theme
+This project was setup to familiarize myself with both [Jekyll](https://jekyllrb.com/) and the [GitHub Pages](https://pages.github.com/) system.
+The site can be viewed live at [ericbaldoni.com](http://ericbaldoni.com).
