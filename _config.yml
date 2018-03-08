@@ -25,7 +25,7 @@ github_username:  eric432
 
 # Build settings
 markdown: kramdown
-plugins:
+plugins_dir:
   - jekyll-feed
   - jekyll-email-protect
 exclude:

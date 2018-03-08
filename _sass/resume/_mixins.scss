@@ -3,4 +3,23 @@
     line-height: ($line * 1) + px;
     font-size: ($sizeValue / 10) + rem;
     line-height: ($line / 10) + rem;
+}
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+/* Simple Queries
+   ========================================================================== */
+
+$md: 768px;
+$lg: 1140px;
+@mixin medium {
+    @media (min-width: #{$md}) {
+        @content;
+      }
+}
+@mixin large {
+  @media (min-width: #{$lg}) {
+    @content;
   }
+}

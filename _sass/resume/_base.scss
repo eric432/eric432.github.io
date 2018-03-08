@@ -139,41 +139,61 @@ main,
 }
 .layout {
   border-bottom: 2px dashed $teal;
-  margin: 0 -15px;
-  display: flex;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  &__main {
-    margin: 0 15px;
-    width: 60%;
-  }
-  &__side {
-    margin: 0 15px;
-    width: 40%;
+  @include medium {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    &__main {
+      margin: 0 15px;
+      width: 60%;
+    }
+    &__side {
+      margin: 0 15px;
+      width: 40%;
+      text-align: center;
+    }
   }
 }
 .card {
-  border: 2px dashed $teal;
+  background: $teal;
+  border: tint($teal, 10%) 2px dashed;
   padding: 15px;
   img {
     margin-bottom: 15px;
+    display: block;
+  }
+}
+.object-human {
+  &__var {
+    color: #DC322F;
+  }
+  &__human {
+    color: $teal-light;
+  }
+  &__name {
+    color:$cyan;
   }
 }
 .five-facts {
   margin-left: $base-margin * 3;
   margin-top: $base-margin;
-  color: $cyan;
   li {
-    @include font-size(16); 
+    @include font-size(18); 
   }
   span {
     color:#2AA198;
   }
 }
 .job-list {
+  margin: $base-margin 0;
   span {
     color: $cyan;
   }
+}
+.footer-icons {
+  @include font-size(24);
 }
 .doc-footer {
   ul {
@@ -190,8 +210,9 @@ main,
 }
 .asci-img {
   overflow: hidden;
-  height: 411px;
-  max-width: 411px;
+  height: 410px;
+  margin-bottom: $base-margin;
+  max-width: 410px;
   width: 100%;
   pre {
     margin: 0;

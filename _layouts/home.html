@@ -1,13 +1,12 @@
 ---
 layout: default
+title: home
 ---
-
 <div>
   <div class="layout layout--right">
     <article class="layout__main">
-      <h1>{{site.name}}</h1>
+      <h1 class="object-human"><span class="object-human__var">var</span> <span class="object-human__human">human</span> = {name: "<span class="object-human__name">{{site.name}}</span>"}</h1>
       <p class="txt-intro">Welcome to my fantastic resume, prepare to be wowed. It's likely I sent you this link, because I'd like to work with you.</p>
-      <p><a class="button" href="mailto:{{ site.email | encode_email }}" title="Contact me">Hire Me!</a></p>
       <h2>Introduction</h2>
       <p>I am a front end developer who landed in this vocation via a design path. I have been designing and building websites
         and applications since...well since we used
@@ -17,17 +16,12 @@ layout: default
         <li><span>I offer depth of experience and talent.</span></li>
         <li><span>I uderstand real world expectation vs budget constaint.</span></li>
         <li><span>I am good a troubleshooting, and helping find solutions.</span></li>
-        <li><span>I work with focused designers who have trained me to mind details when migrating their vision to code.</span></li>
+        <li><span>I worked as a designer, so I am comfortable spending the necessary time to focus on details when converting comps to code.</span></li>
         <li><span>I am constantly learning, updating, and reinventing my processes.</span></li>
       </ol>
     </article>
-    <aside class="layout__side card">
-      <img src="/assets/images/eric-baldoni.jpg" alt="Eric Baldoni">
-      <ul class="contact-list">
-        <li>Contact: <a href="mailto:{{ site.email | encode_email }}" title="Contact me">Contact me</a>
-        </li>
-        <li>Location: Currently residing in Vancouver WA (15 min north of Portland)</li>
-      </ul>
+    <aside class="layout__side">
+        {% include sidebar.html %}
     </aside>
   </div>
   <div class="layout layout--right">
@@ -65,7 +59,7 @@ layout: default
     to this I worked for 5 years at a software/web marketing firm as a designer and then was promoted to Art Director.</p>
   
   {% for job in site.data.jobs %}
-    <dl class="job-list">
+    <dl class="job-list card">
         <dt>{{job.company}} <i>{{job.date}}</i></dt>
         <dd>{{job.description}}</dd>
         <dd><span>Post:</span> {{job.title}}</dd>
@@ -95,3 +89,6 @@ layout: default
   </p>
   {% endcomment %}
 </div>
+<script>
+  var human = {name: "Eric"}
+</script>
