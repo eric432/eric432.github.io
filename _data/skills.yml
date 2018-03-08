@@ -10,7 +10,7 @@
       percent: 65% 
     - title: Wordpress/WooCommerce/ACF/Timber
       percent: 90%
-    - title: Jekyll/Liquid
+    - title: Jekyll/Liquid/Markdown
       percent: 80%
     - title: GIT/Github/Bitbucket
       percent: 65%

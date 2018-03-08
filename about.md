@@ -7,7 +7,7 @@ permalink: /about/
 ## Digging deeper?
 
 About Me? Who would want to know?
-Here is a link to my Portland music blog [ETHERBOMB](http://www.etherbomb.com/ "Portland Music Blog") where I (rarely these days) post my random tohughts on music. I have performed (mostly on bass) in numerous musical acts over the years in both Portland OR and Tucson AZ.
+Here is a link to my Portland music blog [ETHERBOMB](http://www.etherbomb.com/ "Portland Music Blog") where I (rarely these days) post my random thoughts on music. I have performed (mostly on bass) in numerous musical acts over the years in both Portland OR and Tucson AZ.
 
 Some fun development project POCs I have saved.
 

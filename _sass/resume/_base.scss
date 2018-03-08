@@ -152,7 +152,9 @@ main,
     &__side {
       margin: 0 15px;
       width: 40%;
-      text-align: center;
+      &.center {
+        text-align: center;
+      }
     }
   }
 }
@@ -227,7 +229,15 @@ main,
 }
 .progress-bar {
   width: 100%;
-  max-width: 300px;
+  max-width: 450px;
+  margin-bottom: 10px;
+  &__skills-level {
+    color: $teal-light;
+    display: block;
+    @include medium {
+      float: right;
+    }
+  }
   &__track {
     position: relative;
     width: 100%;

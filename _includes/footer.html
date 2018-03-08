@@ -9,7 +9,7 @@
           {% include icon-twitter.html %}
       </li>
       <li>Theme:
-        <a href="https://github.com/eric432/eric432.github.io" title="Resume theme">Jekyll Resume</a></li>
+        <a href="https://github.com/eric432/eric432.github.io" title="Resume theme">Solar Power Resume</a></li>
       <li>Build:
         <span>v1.0</span>
       </li>
@@ -20,6 +20,20 @@
 <script>
   $('.progress-bar .progress-bar__fill span').each(function () {
     var percent = $(this).html();
+    var level = percent.replace('%', '');
+    var level = parseInt(level);
+    if (level > 0 && level < 25) {
+      level = 'Working on it'
+      } else if (level > 25 && level < 50) {
+        level = 'Good';
+      }
+      else if (level > 50 && level < 75) {
+        level = 'Very good';
+      }
+      else if (level > 75) {
+        level = 'I got this!';
+      };
     $(this).parent().css('width', percent);
+    $(this).parent().parent().parent().parent().find('span.js-skills-level').html(level);
   });
 </script>

@@ -13,14 +13,14 @@ title: home
         <code>&lt;table&gt;</code> to hack together page structure. It's been an interesting journey so far.</p>
       <h3>5 quick facts about me</h3>
       <ol class="five-facts">
-        <li><span>I offer depth of experience and talent.</span></li>
+        <li><span>I prefer technical work to team management, but I have performed both roles.</span></li>
         <li><span>I uderstand real world expectation vs budget constaint.</span></li>
-        <li><span>I am good a troubleshooting, and helping find solutions.</span></li>
+        <li><span>I am good at troubleshooting, and helping find solutions.</span></li>
         <li><span>I worked as a designer, so I am comfortable spending the necessary time to focus on details when converting comps to code.</span></li>
-        <li><span>I am constantly learning, updating, and reinventing my processes.</span></li>
+        <li><span>I am more of a hunter gather than a farmer when it comes to programming.</span></li>
       </ol>
     </article>
-    <aside class="layout__side">
+    <aside class="layout__side center">
         {% include sidebar.html %}
     </aside>
   </div>
@@ -41,6 +41,7 @@ title: home
                   <dt>{{skills.title}}</dt>
                   {% for skill in skills.skill %}
                   <dd>{{skill.title}}
+                    <span class="progress-bar__skills-level js-skills-level"></span>
                     <div class="progress-bar">
                       <div class="progress-bar__track">
                         <div class="progress-bar__fill">
